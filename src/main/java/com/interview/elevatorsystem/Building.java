@@ -7,7 +7,7 @@ public class Building {
     private int noOfFloor; // Number of floors
     private int noOfElevator; // Number of elevators
     private int buildingPopulation; // Building population
-    private int algorithm; // Desired algorithm will be passed as a CL arg
+    private int algorithm;
 
     private Elevator elevatorGroup[]; // An array of L elevators
     private Floor floors[]; // An array of N floors
@@ -38,7 +38,7 @@ public class Building {
         this.algorithm = algorithm;
     }
 
-    private void createElevators() {
+    public void createElevators() {
         for (int i = 0; i < this.noOfElevator; ++i) {
             this.elevatorGroup[i] = new Elevator(i, this.algorithm, 1,
                     1, 1, this.buildingPopulation / 4, 3);
@@ -58,7 +58,7 @@ public class Building {
         }
     }
 
-    private void createFloors() {
+    public void createFloors() {
         for (int i = 0; i < this.noOfFloor; ++i) {
             this.floors[i] = new Floor(i);
         }
@@ -72,38 +72,10 @@ public class Building {
      * Randomly selects a floor from the floors array and
      * calls the generatePassenger method on the Floor(randFloor) object.
      */
-    private void generatePassenger(int N) throws InterruptedException {
-        int randFloor = this.rand.nextInt(N);
-        floors[randFloor].generatePassenger(N);
+    public void generatePassenger(int noOfFloor) throws InterruptedException {
+        int randFloor = this.rand.nextInt(noOfFloor);
+        floors[randFloor].generatePassenger(noOfFloor);
     }
 
-    public static void main(String[] args) throws InterruptedException {
 
-        Scanner reader = new Scanner(System.in);
-
-        System.out.println("Enter no of elevator");
-        int noOfElevator = Integer.parseInt(reader.nextLine());
-        System.out.println("Enter no of Floor in building");
-        int floor = Integer.parseInt(reader.nextLine());
-        System.out.println("Enter building population");
-        int population = Integer.parseInt(reader.nextLine());
-
-        if (floor > noOfElevator) {
-            Building building = new Building(floor, noOfElevator, population);
-            building.setAlgorithm(1);
-            building.getController().setAlgorithm(1);
-            System.out.println("\nAll elevators start on the central floor of the building with direction up.\n");
-            building.createFloors(); // create N number of floor
-            building.createElevators(); // create L number of elevators
-            new Thread(building.getController()).start();
-            while (true) {
-
-                // Generate a passenger on one of the floors
-                building.generatePassenger(building.getNoOfFloor());
-                Thread.sleep(20000);
-            }
-        } else {
-            System.out.println("The number of floors can not be less than the number of elevator");
-        }
-    }
 }

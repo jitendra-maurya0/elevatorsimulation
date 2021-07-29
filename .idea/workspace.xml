@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5af7d5d3-e082-455c-b48a-5c6bf2efa97d" name="Default Changelist" comment="" />
+    <list default="true" id="5af7d5d3-e082-455c-b48a-5c6bf2efa97d" name="Default Changelist" comment="updated test case">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/interview/elevatorsystem/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/interview/elevatorsystem/BuildingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/interview/elevatorsystem/FloorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/interview/elevatorsystem/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/interview/elevatorsystem/Building.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/Building.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/Direction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/Elevator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/Elevator$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/Elevator$RequestComparator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/Elevator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/Floor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/GroupElevatorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/Passenger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/Request.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/RoundRobin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/interview/elevatorsystem/Type.class" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +37,13 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JenkinsBrowserPanel">
     <treeState>
@@ -35,12 +59,24 @@
     </option>
   </component>
   <component name="ProjectId" id="1vwJHUBjXNE0jA6rQclDBuXBdHF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="go.import.settings.migrated" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.interview.elevatorsystem" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.interview.elevatorsystem" />
     </key>
@@ -60,11 +96,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Building" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interview.elevatorsystem.Building" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interview.elevatorsystem.Main" />
       <module name="elevatorsimulator" />
-      <option name="PROGRAM_PARAMETERS" value="2 3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.interview.elevatorsystem.*" />
@@ -75,9 +110,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BuildingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="elevatorsimulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.elevatorsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interview.elevatorsystem" />
+      <option name="MAIN_CLASS_NAME" value="com.interview.elevatorsystem.BuildingTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuildingTest.generatePassenger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="elevatorsimulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.elevatorsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interview.elevatorsystem" />
+      <option name="MAIN_CLASS_NAME" value="com.interview.elevatorsystem.BuildingTest" />
+      <option name="METHOD_NAME" value="generatePassenger" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuildingTest.generatePassengerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="elevatorsimulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.elevatorsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interview.elevatorsystem" />
+      <option name="MAIN_CLASS_NAME" value="com.interview.elevatorsystem.BuildingTest" />
+      <option name="METHOD_NAME" value="generatePassengerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FloorTest.getPassengers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="elevatorsimulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interview.elevatorsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.interview.elevatorsystem" />
+      <option name="MAIN_CLASS_NAME" value="com.interview.elevatorsystem.FloorTest" />
+      <option name="METHOD_NAME" value="getPassengers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.FloorTest.getPassengers" />
+      <item itemvalue="JUnit.BuildingTest" />
+      <item itemvalue="JUnit.BuildingTest.generatePassengerTest" />
+      <item itemvalue="JUnit.BuildingTest.generatePassenger" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Building" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BuildingTest" />
+        <item itemvalue="JUnit.BuildingTest.generatePassenger" />
+        <item itemvalue="JUnit.BuildingTest.generatePassengerTest" />
+        <item itemvalue="JUnit.FloorTest.getPassengers" />
       </list>
     </recent_temporary>
   </component>
@@ -127,19 +236,34 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/interview/elevatorsystem/Floor.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/interview/elevatorsystem/Elevator.java</url>
           <line>332</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/interview/elevatorsystem/FloorTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/interview/elevatorsystem/FloorTest.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/interview/elevatorsystem/Floor.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="13" />
+          <line>61</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/interview/elevatorsystem/Building.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/interview/elevatorsystem/BuildingTest.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
